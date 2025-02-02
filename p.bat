@@ -13,6 +13,6 @@ if "%1"=="" (
 
 set "COMMAND=!COMMAND:.\=./!"
 
-set "COMMAND=!COMMAND:&&=;!"
+set "COMMAND=!COMMAND:\/=;!"
 
 "%MSYS2_PATH%" -l -c "cd '%CURRENT_DIR%' && %COMMAND%"
